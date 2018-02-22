@@ -1,0 +1,22 @@
+CV.deployed().then(function(instance){return instance.setPersonalInfo("Luke", "1.1.1987", "Waw", 123456, "email", "photo");});
+CV.deployed().then(function(instance){return instance.getPersonalInfo.call();});
+
+CV.deployed().then(function(instance){return instance.setJob("Promise", "1.1.1990", "2.2.2000", "coding");});
+CV.deployed().then(function(instance){return instance.countJob.call();}).then(function(value){return value.toNumber()});
+CV.deployed().then(function(instance){return instance.getJob.call(0);});
+
+CV.deployed().then(function(instance){return instance.setSchool("PW", "1.1.1990", "2.2.2000", "EITI");});
+CV.deployed().then(function(instance){return instance.countSchool.call();}).then(function(value){return value.toNumber()});
+CV.deployed().then(function(instance){return instance.getSchool.call(0);});
+
+CV.deployed().then(function(instance){return instance.setCert("Microsoft cert");});
+CV.deployed().then(function(instance){return instance.getCert.call(0);});
+CV.deployed().then(function(instance){return instance.countCert.call();}).then(function(value){return value.toNumber()});
+
+CV.deployed().then(function(instance){return instance.setInterests("Ethereum");});
+CV.deployed().then(function(instance){return instance.getInterest.call(0);});
+CV.deployed().then(function(instance){return instance.countInterests.call();}).then(function(value){return value.toNumber()});
+
+CV.deployed().then(function(instance){return instance.setLanguage("English");});
+CV.deployed().then(function(instance){return instance.getLanguage.call(0);});
+CV.deployed().then(function(instance){return instance.countLanguages.call();}).then(function(value){return value.toNumber()});
